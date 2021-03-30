@@ -37,7 +37,6 @@
       [
         "@semantic-release/git",
         {
-          "assets": false,
           "message": "chore: ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
       ]
