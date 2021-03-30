@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release": "semantic-release"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,30 +15,5 @@
   "bugs": {
     "url": "https://github.com/assisrafael/semantic-release-test/issues"
   },
-  "homepage": "https://github.com/assisrafael/semantic-release-test#readme",
-  "devDependencies": {
-    "@semantic-release/git": "^9.0.0",
-    "semantic-release": "^17.4.2"
-  },
-  "release": {
-    "branches": [
-      "main"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/npm",
-        {
-          "npmPublish": false
-        }
-      ],
-      [
-        "@semantic-release/git",
-        {
-          "message": "chore: v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-        }
-      ]
-    ]
-  }
+  "homepage": "https://github.com/assisrafael/semantic-release-test#readme"
 }
