@@ -8,10 +8,18 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
         with:
-          node-version: '12'
-      - run: yarn install --frozen-lockfile
+          node-version: 12
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Release
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
