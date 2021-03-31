@@ -16,6 +16,11 @@ jobs:
         with:
           node-version: 12
 
+      - name: Set ssh key and ssh agent
+        uses: webfactory/ssh-agent@v0.5.1
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
