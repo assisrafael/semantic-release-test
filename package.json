@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/assisrafael/semantic-release-test.git"
+    "url": "https://github.com/semantic-release-test-org/semantic-release-test.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/assisrafael/semantic-release-test/issues"
+    "url": "https://github.com/semantic-release-test-org/semantic-release-test/issues"
   },
-  "homepage": "https://github.com/assisrafael/semantic-release-test#readme",
+  "homepage": "https://github.com/semantic-release-test-org/semantic-release-test#readme",
   "dependencies": {
     "secret-dependency": "github:assisrafael/semantic-release-private-dependency#v1.0.0"
   },
