@@ -1,3 +1,4 @@
 const assert = require("assert");
+const { getTrueValue } = require("./index");
 
-assert.ok(true);
+assert.ok(getTrueValue());
